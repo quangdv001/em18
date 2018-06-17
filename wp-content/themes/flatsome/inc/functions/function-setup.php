@@ -103,6 +103,8 @@ function flatsome_scripts() {
   $version = $theme->get( 'Version' );
 
   // Styles
+  wp_enqueue_style( 'flatsome-custom', $uri .'/assets/css/custom.css', array(), $version, 'all' );
+
   if(!is_rtl()){
       wp_enqueue_style( 'flatsome-main', $uri .'/assets/css/flatsome.css', array(), $version, 'all' );
   } else{
