@@ -607,4 +607,4 @@ msgstr ""
 #: woocommerce/content-product.php:61
 #@ flatsome
 msgid "Quick View"
-msgstr ""
+msgstr "Xem Nhanh"

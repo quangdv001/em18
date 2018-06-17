@@ -11,3 +11,11 @@ require get_template_directory() . '/inc/init.php';
  * Note: It's not recommended to add any custom code here. Please use a child theme so that your customizations aren't lost during updates.
  * Learn more here: http://codex.wordpress.org/Child_Themes
  */
+
+
+
+// add_filter('woocommerce_is_purchasable', 'woocommerce_cloudways_purchasable');
+
+// function woocommerce_cloudways_purchasable($cloudways_purchasable, $product) {
+// 	return ($product->id == your_specific_product_id(like 22) ? false : $cloudways_purchasable);
+// }
