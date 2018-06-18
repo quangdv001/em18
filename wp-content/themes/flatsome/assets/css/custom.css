@@ -2,4 +2,13 @@
 	.ml-half-custom {
 		margin-left: 15px;
 	}
+	.ml-top-custom {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 766px) {
+	.submit-btn-width {
+		width: 100%;
+	}
 }
