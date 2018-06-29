@@ -11,4 +11,7 @@
 	.submit-btn-width {
 		width: 100%;
 	}
+	.mobile-bottom {
+		margin-bottom: -35px !important;
+	}
 }

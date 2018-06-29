@@ -35,10 +35,24 @@ if ( ! class_exists( 'WooCommerce' ) ) {
  * @return WooCommerce
  */
 function wc() {
-	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
-    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+//	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
+//    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
 	return WooCommerce::instance();
 }
 
 // Global for backwards compatibility.
 $GLOBALS['woocommerce'] = wc();
+
+add_filter( 'woocommerce_checkout_fields' , 'bbloomer_remove_billing_postcode_checkout' );
+
+function bbloomer_remove_billing_postcode_checkout( $fields ) {
+    unset($fields['billing']['billing_postcode']);
+    return $fields;
+}
+
+add_filter( 'woocommerce_checkout_fields' , 'bbloomer_remove_billing_country_checkout' );
+
+function bbloomer_remove_billing_country_checkout( $fields ) {
+    unset($fields['billing']['billing_country']);
+    return $fields;
+}
