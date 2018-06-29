@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <title>Small red heart with transparent background</title>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <path d="m207.28949,28.82739c-66.24,0 -119.99995,53.76001 -119.99995,120c0,134.75553 135.93315,170.08728 228.56245,303.30805c87.57422,-132.40338 228.5625,-172.85459 228.5625,-303.30805c0,-66.23999 -53.75989,-120 -120,-120c-48.04791,0 -89.40161,28.37043 -108.5625,69.1875c-19.1608,-40.81707 -60.5145,-69.1875 -108.5625,-69.1875z" stroke-miterlimit="4" stroke-width="6.700001" stroke="#ffffff" fill="#7f7f7f" id="svg_2"/>
+  </g>
+ </g>
+</svg>
